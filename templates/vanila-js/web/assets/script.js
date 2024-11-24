@@ -1,12 +1,23 @@
 // Example interaction with the NUI
-function jump() {
+function dogged() {
   fetchNui("jump", { force: 1000 });
   notifyIsland({
-    title: "Jump",
-    text: "You have jumped!",
+    title: "Prepare to be dogged!",
+    text: "You have ben dogged!",
     duration: 3000,
   });
 }
+
+function playVideo() {
+  const videoSection = document.getElementById('videoSection');
+  const youtubePlayer = document.getElementById('youtubePlayer');
+  const videoURL = "https://www.youtube.com/embed/6WC_m70Wazw?autoplay=1"; 
+
+  youtubePlayer.src = videoURL;
+
+  videoSection.classList.remove('hidden');
+}
+
 
 // Handle Dark Mode Toggle
 document.addEventListener("darkMode", (e) => {

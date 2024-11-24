@@ -2,8 +2,8 @@ lua54 'yes'
 fx_version 'cerulean'
 game 'gta5'
 
-author 'luxu.gg'
-description 'okokPhone Custom App'
+author 'Im2Slothy#0'
+description 'TESTAPP'
 
 shared_scripts {
       "init.lua"
